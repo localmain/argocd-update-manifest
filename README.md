@@ -1,0 +1,1 @@
+# argocd-update-manifest
