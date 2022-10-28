@@ -18,7 +18,7 @@ node {
                         sh "git config user.name devopsodia"
                         //sh "git switch master"
                         sh "cat deployment.yaml"
-                        sh "sed -i 's+192.168.56.120:9091/image-argocd-dev/devopsodia.*+192.168.56.120:9091/image-argocd-dev/devopsodia:${DOCKERTAG}+g' deployment.yaml"
+                        sh "sed -i 's+192.168.56.120:9091/argocd-dev/devopsodia.*+192.168.56.120:9091/argocd-dev/devopsodia:${DOCKERTAG}+g' deployment.yaml"
                         sh "cat deployment.yaml"
                         sh "git add ."
                         sh "git commit -m 'Done by Jenkins Job update manifest: ${env.BUILD_NUMBER}'"
