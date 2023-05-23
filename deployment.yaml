@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: container-devopsodia
-        image: 3.89.102.182/argocd-dev/localmain:3
+        image: 34.228.37.180/argocd-dev/localmain:3
         ports:
         - containerPort: 80
 ---
