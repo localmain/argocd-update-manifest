@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       -  name: devopsodia
-         image:  munna998/dev:latest
+         image:  34.228.37.180:9090/argocd-dev/odia
          ports:
          - containerPort: 80
 ---
