@@ -18,10 +18,10 @@ node {
                         sh "git config user.name localmain"
                         //sh "git switch master"
                         sh "cat deployment.yaml"
-                        sh "sed -i 's+34.228.37.180:9090/argocd-dev/localmain.*+34.228.37.180:9090/argocd-dev/localmain:${DOCKERTAG}+g' deployment.yaml"
+                        sh "sed -i 's+34.228.37.180:9090/argocd-dev/localmain.*+34.228.37.180:9090/argocd-dev/localmain deployment.yaml"
                         sh "cat deployment.yaml"
                         sh "git add ."
-                        sh "git commit -m 'Done by Jenkins Job update manifest: ${env.BUILD_NUMBER}'"
+                        sh "git commit -m 'Done by Jenkins Job update manifest "
                         sh "git push --force https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/argocd-update-manifest.git HEAD:main"
                         
                         
