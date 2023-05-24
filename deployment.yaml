@@ -15,10 +15,10 @@ spec:
         app: devopsodia
     spec:
       containers:
-	-  name: localmain
-           image: argocd-dev/localmain:11
-           ports:
-            - containerPort: 80
+      -  name: localmain
+         image: 34.228.37.180:9090/argocd-dev/localmain:11
+         ports:
+         - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
