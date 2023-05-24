@@ -15,8 +15,8 @@ spec:
         app: devopsodia
     spec:
       containers:
-      -  name: localmain
-         image: 34.228.37.180:9090/argocd-dev/localmain
+      -  name: devopsodia
+         image:  munna998/dev:latest
          ports:
          - containerPort: 80
 ---
